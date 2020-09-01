@@ -1,0 +1,31 @@
+﻿
+<html>
+<head>
+<title>
+JavaScript Errors
+</title>
+</head>
+<body>
+<p>Here Displaying The Errors Using Catch!</p>
+<script>
+var x=prompt("Enter a Number:"," ");
+try{
+if(isNaN(x)){
+throw "Err"
+}
+else{
+document.write("You Entered :" + x);
+}
+
+}
+catch(err){
+if(err="Err"){
+document.write("You didn't enter a number");
+}
+}
+finally{
+document.write("-------------->In this the Finally Block Executes regardless of Try and Catch Blocks");
+}
+</script>
+</body>
+</html>
